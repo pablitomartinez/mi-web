@@ -40,9 +40,8 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local.
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/pablitomartinez/mi-web.git
-
-### Instalación de dependencias
+git clone https://github.com/tu-usuario/mi-web.git
+Instalación de dependencias
 Usa npm o yarn para instalar las dependencias del proyecto.
 
 bash
@@ -51,10 +50,11 @@ cd mi-web
 npm install
 # o
 yarn install
-
+Ejecutar en modo desarrollo
+bash
+Copiar código
 npm run dev
 # o
 yarn dev
-
-
 Accede a http://localhost:3000 para ver la web en tu navegador.
+

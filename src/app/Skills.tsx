@@ -10,7 +10,7 @@ import {
   SiPrisma,
 } from "react-icons/si";
 
-const Tecnologias = () => {
+const Skills = () => {
   const tecnologias = [
     {
       nombre: "Next.js",
@@ -71,4 +71,4 @@ const Tecnologias = () => {
   );
 };
 
-export default Tecnologias;
+export default Skills;

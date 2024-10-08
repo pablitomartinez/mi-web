@@ -27,12 +27,9 @@ const Navbar = () => {
           Skills
         </Link>
         <Link href="/portfolio" className="hover:text-orange-600">
-          Portfolio
+          Projects
         </Link>
         <Link href="/services" className="hover:text-orange-600">
-          Services
-        </Link>
-        <Link href="/contact" className="hover:text-orange-600">
           Contact
         </Link>
       </div>

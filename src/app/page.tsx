@@ -2,16 +2,18 @@ import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import AboutMe from "./aboutMe";
 import Footer from "@/components/footer";
-import Tecnologias from "./Tecnologias";
+import Skills from "./Skills";
 import FormularioContacto from "@/components/formContac";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Hero />
-      <Tecnologias />
       <AboutMe />
+      <Skills />
+      <Projects />
       <FormularioContacto />
       <Footer />
     </div>

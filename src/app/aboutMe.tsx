@@ -9,10 +9,10 @@ const AboutMe = () => {
             About Me
           </h1>
           <p className="text-lg md:text-xl text-gray-400 mb-6">
-            I'm a passionate{" "}
+            Im a passionate{" "}
             <span className="text-white font-bold">Graphic Designer</span> with
             a love for clean and modern designs. My journey began several years
-            ago, and since then, I've worked on a variety of projects, from
+            ago, and since then, Ive worked on a variety of projects, from
             logos to full-fledged branding for companies across the globe.
             Creativity drives me, and I strive to push the boundaries of design
             with every project I take on.
@@ -25,7 +25,7 @@ const AboutMe = () => {
             project I work on.
           </p>
           <p className="text-lg md:text-xl text-gray-400">
-            Feel free to reach out if you'd like to work together on your next
+            Feel free to reach out if youd like to work together on your next
             design project!
           </p>
         </div>

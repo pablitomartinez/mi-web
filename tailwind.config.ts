@@ -9,11 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#181818", // Negro profundo
+        secondary: "#1f51ff", // Azul neón
+        background: "#ffffff", // Blanco puro
+        text: "#9ca3af", // Gris claro
+        accent: "#ff9505", // Naranja fuerte
       },
     },
   },
   plugins: [],
 };
+
 export default config;

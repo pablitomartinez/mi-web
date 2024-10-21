@@ -1,7 +1,6 @@
-// components/Navbar.tsx
-'use client';
+"use client";
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll"; // Importamos Link de react-scroll
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,29 +10,61 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black text-white px-6 py-4 flex items-center justify-between">
+    <nav className="bg-black text-white px-6 py-4 flex items-center justify-between fixed top-0 w-full z-50">
       <div className="flex items-center">
         <div className="text-2xl font-bold text-orange-600">A</div>
       </div>
 
+      {/* Menú en pantallas grandes */}
       <div className="hidden md:flex space-x-8">
-        <Link href="/" className="hover:text-orange-600">
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="hover:text-orange-600 cursor-pointer"
+        >
           Home
         </Link>
-        <Link href="/about" className="hover:text-orange-600">
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="hover:text-orange-600 cursor-pointer"
+        >
           About Me
         </Link>
-        <Link href="/skills" className="hover:text-orange-600">
+        <Link
+          to="skills"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="hover:text-orange-600 cursor-pointer"
+        >
           Skills
         </Link>
-        <Link href="/portfolio" className="hover:text-orange-600">
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="hover:text-orange-600 cursor-pointer"
+        >
           Projects
         </Link>
-        <Link href="/services" className="hover:text-orange-600">
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="hover:text-orange-600 cursor-pointer"
+        >
           Contact
         </Link>
       </div>
 
+      {/* Botón de menú en pantallas pequeñas */}
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           <svg
@@ -53,39 +84,51 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Menú desplegable para pantallas pequeñas */}
       {isOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-black py-4 space-y-4">
-          <Link href="/" className="block text-center hover:text-orange-600">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className="block text-center hover:text-orange-600 cursor-pointer"
+          >
             Home
           </Link>
           <Link
-            href="/about"
-            className="block text-center hover:text-orange-600"
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className="block text-center hover:text-orange-600 cursor-pointer"
           >
             About Me
           </Link>
           <Link
-            href="/skills"
-            className="block text-center hover:text-orange-600"
+            to="skills"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className="block text-center hover:text-orange-600 cursor-pointer"
           >
             Skills
           </Link>
           <Link
-            href="/portfolio"
-            className="block text-center hover:text-orange-600"
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className="block text-center hover:text-orange-600 cursor-pointer"
           >
-            Portfolio
+            Projects
           </Link>
           <Link
-            href="/services"
-            className="block text-center hover:text-orange-600"
-          >
-            Services
-          </Link>
-          <Link
-            href="/contact"
-            className="block text-center hover:text-orange-600"
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className="block text-center hover:text-orange-600 cursor-pointer"
           >
             Contact
           </Link>

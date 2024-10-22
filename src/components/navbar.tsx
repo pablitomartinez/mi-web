@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import { Link } from "react-scroll"; // Importamos Link de react-scroll
 
@@ -12,7 +13,13 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white px-6 py-4 flex items-center justify-between fixed top-0 w-full z-50">
       <div className="flex items-center">
-        <div className="text-2xl font-bold text-orange-600">A</div>
+        {/* <div className="text-2xl font-bold text-orange-600">A</div> */}
+        <Image
+          src="/logo/logo-svg.svg"
+          width={50}
+          height={50}
+          alt="logo-pmDev"
+        />
       </div>
 
       {/* Menú en pantallas grandes */}

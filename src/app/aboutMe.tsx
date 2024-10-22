@@ -1,36 +1,99 @@
-// pages/aboutMe.tsx
+import Image from "next/image";
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <>
-      <section className="bg-primary text-text py-20 px-6 md:px-20">
-        <div className="container mx-auto text-center md:text-left">
+    <section className="bg-primary text-text py-20 px-6 md:px-20">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row md:items-center justify-center text-center md:text-left">
+        {/* Texto descriptivo */}
+        <div className="w-full md:w-1/2 md:pr-8 mt-8 md:mt-0">
           <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-accent">
-            About Me
+            Sobre mí
           </h1>
           <p className="text-lg md:text-xl text-text mb-6">
-            Im a passionate{" "}
-            <span className="text-background font-bold">Graphic Designer</span>{" "}
-            with a love for clean and modern designs. My journey began several
-            years ago, and since then, Ive worked on a variety of projects,
-            from logos to full-fledged branding for companies across the globe.
-            Creativity drives me, and I strive to push the boundaries of design
-            with every project I take on.
+            Me apasiona crear{" "}
+            <span className="text-background font-bold">
+              experiencias visuales impactantes
+            </span>{" "}
+            y ofrecer soluciones funcionales mediante el desarrollo web. Con una
+            formación en diseño UX/UI, me especializo en diseñar interfaces
+            centradas en el usuario y accesibles, garantizando una experiencia
+            de usuario coherente y atractiva.
           </p>
           <p className="text-lg md:text-xl text-text mb-6">
-            My skills span across a wide range of design software including
-            Adobe Photoshop, Illustrator, and InDesign. I am constantly learning
-            new techniques and technologies to stay updated in the ever-evolving
-            world of design. Collaboration and communication are key in every
-            project I work on.
+            Aunque me gusta lo visual, también me estoy abriendo camino en el
+            desarrollo full stack utilizando tecnologías como Node.js y bases de
+            datos, siempre buscando aprender y mejorar en cada proyecto.
           </p>
           <p className="text-lg md:text-xl text-text">
-            Feel free to reach out if youd like to work together on your next
-            design project!
+            Actualmente formo parte del proyecto{" "}
+            <span className="text-background font-bold">Altiora</span>, donde
+            junto con un equipo nos dedicamos a ofrecer soluciones tecnológicas
+            a empresas y emprendimientos. Estoy siempre abierto a nuevas
+            oportunidades y colaboraciones.
           </p>
         </div>
-      </section>
-    </>
+
+        {/* Imagen redonda con botonera de redes sociales */}
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+            <Image
+              src="/perfil.png" // Ruta de tu imagen
+              alt="Mi Foto"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+          {/* Botonera de redes sociales */}
+          <div className="flex justify-center mt-6 space-x-6 text-accent">
+            <a
+              href="https://linkedin.com"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin
+                size={24}
+                className="hover:text-accent-dark transition duration-300"
+              />
+            </a>
+            <a
+              href="https://github.com"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub
+                size={24}
+                className="hover:text-accent-dark transition duration-300"
+              />
+            </a>
+            <a
+              href="https://twitter.com"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter
+                size={24}
+                className="hover:text-accent-dark transition duration-300"
+              />
+            </a>
+            <a
+              href="https://instagram.com"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram
+                size={24}
+                className="hover:text-accent-dark transition duration-300"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

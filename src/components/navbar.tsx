@@ -16,8 +16,8 @@ const Navbar = () => {
         {/* <div className="text-2xl font-bold text-orange-600">A</div> */}
         <Image
           src="/logo/logo-svg.svg"
-          width={50}
-          height={50}
+          width={80}
+          height={80}
           alt="logo-pmDev"
         />
       </div>

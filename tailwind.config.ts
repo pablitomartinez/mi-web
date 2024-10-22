@@ -8,13 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // Paleta de colores personalizada
+      // Paleta de colores personalizada basada en el logo
       colors: {
-        primary: "#181818", // Negro profundo
-        secondary: "#1f51ff", // Azul neón
-        background: "#ffffff", // Blanco puro
-        text: "#9ca3af", // Gris claro
-        accent: "#ff9505", // Naranja fuerte
+        primary: "#1A2B4C", // Azul oscuro del fondo
+        secondary: "#0070F3", // Azul brillante del acento
+        background: "#F5F5F5", // Fondo claro para mantener legibilidad
+        text: "#D4CBB8", // Beige del texto
+        accent: "#00A3E0", // Acento adicional para resaltar (derivado del azul)
       },
       // Tipografía personalizada
       fontFamily: {

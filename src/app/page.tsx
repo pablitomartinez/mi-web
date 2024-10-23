@@ -31,9 +31,9 @@ export default function Home() {
         <div id="contact">
           <FormularioContacto />
         </div>
+      </div>
         {/* Footer */}
         <Footer />
-      </div>
     </>
   );
 }

@@ -35,6 +35,17 @@ const config: Config = {
         "4xl": "2rem", // Bordes redondeados grandes
       },
     },
+    // Definir el contenedor global
+    container: {
+      center: true, // Hace que el contenedor esté centrado automáticamente
+      padding: {
+        DEFAULT: "1rem", // Padding por defecto para pantallas pequeñas
+        sm: "2rem", // Padding en pantallas pequeñas
+        lg: "8rem", // Padding en pantallas grandes
+        xl: "5rem", // Padding en pantallas extra grandes
+        "2xl": "6rem", // Padding en pantallas muy grandes
+      },
+    },
     // Breakpoints personalizados
     screens: {
       sm: "480px", // Pantallas pequeñas

@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <>
         <Navbar />
-      <div className="container mx-auto">
-        {/* Sección Hero con ID */}
         <div id="home">
           <Hero />
         </div>
+      <div className="container mx-auto">
+        {/* Sección Hero con ID */}
         {/* Sección AboutMe con ID */}
         <div id="about">
           <AboutMe />

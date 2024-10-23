@@ -22,13 +22,13 @@ const Projects = () => {
             <div key={index} className="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div className="rounded-lg h-64 overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 relative">
                 {/* Utilizar el componente Image en lugar de img */}
-                {/* <Image
+                <Image
                   alt={project.title}
                   src={project.image}
                   layout="fill"
                   objectFit="cover"
                   quality={75} // Puedes ajustar la calidad si lo deseas
-                /> */}
+                />
               </div>
               <h2 className="text-xl font-heading text-text mt-5">
                 {project.title}
